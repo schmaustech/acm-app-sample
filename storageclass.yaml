@@ -1,0 +1,15 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  annotations:
+    storageclass.kubernetes.io/is-default-class: "true"
+  labels:
+    local.storage.openshift.io/owner-name: local-block
+    local.storage.openshift.io/owner-namespace: openshift-local-storage
+  name: localblock
+  resourceVersion: "44585"
+  selfLink: /apis/storage.k8s.io/v1/storageclasses/localblock
+  uid: b1801843-e606-48a1-8731-39ec0c656b41
+provisioner: kubernetes.io/no-provisioner
+reclaimPolicy: Delete
+volumeBindingMode: WaitForFirstConsumer
