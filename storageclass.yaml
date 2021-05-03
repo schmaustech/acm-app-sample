@@ -7,3 +7,4 @@ metadata:
     local.storage.openshift.io/owner-name: local-block
     local.storage.openshift.io/owner-namespace: openshift-local-storage
   name: localblock
+
